@@ -16,10 +16,19 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F1F5F9",
   },
-  tasks: {},
-  title: {
+
+  tasks: {
     height: 236,
     backgroundColor: "#4A3780",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  title: {
+    textAlign: "center",
+    fontSize: 32,
+    fontWeight: "bold",
+    color: "white",
   },
   items: {},
 });

@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 
 export default function App() {
@@ -7,6 +6,7 @@ export default function App() {
       <View style={styles.tasks}>
         <Text style={styles.title}>Your Tasks</Text>
       </View>
+      <View style={styles.items}></View>
     </SafeAreaView>
   );
 }
@@ -34,5 +34,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "white",
   },
-  items: {},
+  items: {
+    backgroundColor: "white",
+    height: 100,
+    position: "absolute",
+    left: "5%",
+    right: "5%",
+    top: 200,
+    borderRadius: 20,
+  },
 });

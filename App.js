@@ -6,8 +6,6 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.tasks}>
         <Text style={styles.title}>Your Tasks</Text>
-
-        <View style={styles.items}></View>
       </View>
     </View>
   );
@@ -16,6 +14,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#F1F5F9",
   },
+  tasks: {},
+  title: {
+    height: 236,
+    backgroundColor: "#4A3780",
+  },
+  items: {},
 });

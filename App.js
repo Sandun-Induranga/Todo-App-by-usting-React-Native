@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   items: {
     backgroundColor: "white",
-    height: 100,
+    height: "75%",
     position: "absolute",
     left: "5%",
     right: "5%",

@@ -1,4 +1,10 @@
-import { StyleSheet, Text, View, SafeAreaView, Button } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  TouchableOpacity,
+} from "react-native";
 import React, { useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
@@ -52,14 +58,10 @@ export default function App() {
           </Text>
         </View>
       </View>
-      <View style="btn">
-        <Button
-          title="Add New Task"
-          color={"#4A3780"}
-          onPress={() => {
-            console.log();
-          }} //change "function" with your function for the button pressing
-        />
+      <View>
+        <TouchableOpacity style={styles.btn}>
+          <Text>My button</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -107,5 +109,16 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     paddingLeft: 40,
+  },
+  btn: {
+    position: "absolute",
+    bottom: 10,
+    width: "90%",
+    left: "5%",
+    backgroundColor: "#4A3780",
+    height: 60,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

@@ -1,4 +1,6 @@
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, Checkbox } from "react-native";
+import React, { useState } from "react";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function App() {
   return (
@@ -7,13 +9,34 @@ export default function App() {
         <Text style={styles.title}>Your Tasks</Text>
       </View>
       <View style={styles.items}>
-        <Text style={styles.item}>Task 1</Text>
-        <Text style={styles.item}>Task 2</Text>
-        <Text style={styles.item}>Task 3</Text>
-        <Text style={styles.item}>Task 4</Text>
-        <Text style={styles.item}>Task 5</Text>
-        <Text style={styles.item}>Task 6</Text>
-        <Text style={styles.item}>Task 7</Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 1
+        </Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 2
+        </Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 3
+        </Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 4
+        </Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 5
+        </Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 6
+        </Text>
+        <Text style={styles.item}>
+          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+          Task 7
+        </Text>
       </View>
     </SafeAreaView>
   );

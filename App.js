@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView, Checkbox } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, Button } from "react-native";
 import React, { useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
@@ -6,7 +6,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.tasks}>
-        <Text style={styles.title}>Your Tasks</Text>
+        <Text style={styles.title}>My Todo List</Text>
       </View>
       <View style={styles.items}>
         <View>
@@ -52,6 +52,15 @@ export default function App() {
           </Text>
         </View>
       </View>
+      <View style="btn">
+        <Button
+          title="Add New Task"
+          color={"#4A3780"}
+          onPress={() => {
+            console.log();
+          }} //change "function" with your function for the button pressing
+        />
+      </View>
     </SafeAreaView>
   );
 }
@@ -81,7 +90,7 @@ const styles = StyleSheet.create({
   },
   items: {
     backgroundColor: "white",
-    height: "75%",
+    height: "60%",
     position: "absolute",
     left: "5%",
     right: "5%",

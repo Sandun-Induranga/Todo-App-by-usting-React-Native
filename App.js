@@ -11,6 +11,9 @@ export default function App() {
         <Text style={styles.item}>Task 2</Text>
         <Text style={styles.item}>Task 3</Text>
         <Text style={styles.item}>Task 4</Text>
+        <Text style={styles.item}>Task 5</Text>
+        <Text style={styles.item}>Task 6</Text>
+        <Text style={styles.item}>Task 7</Text>
       </View>
     </SafeAreaView>
   );
@@ -47,8 +50,14 @@ const styles = StyleSheet.create({
     right: "5%",
     top: 200,
     borderRadius: 20,
+    overflow: "scroll",
   },
   item: {
     padding: 40,
+    borderBottomWidth: 1,
+    borderColor: "#E5E9ED",
+    color: "#1B1B1D",
+    fontWeight: "bold",
+    fontSize: 20,
   },
 });

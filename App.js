@@ -90,7 +90,6 @@ const styles = StyleSheet.create({
     overflow: "scroll",
   },
   item: {
-    flex: 1,
     height: 80,
     flexDirection: "column",
     borderBottomWidth: 1,
@@ -98,7 +97,6 @@ const styles = StyleSheet.create({
     color: "#1B1B1D",
     fontWeight: "bold",
     fontSize: 20,
-    justifyContent: "space-evenly",
-    alignItems: "center",
+    paddingLeft: 40,
   },
 });

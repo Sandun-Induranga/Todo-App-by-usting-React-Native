@@ -9,34 +9,48 @@ export default function App() {
         <Text style={styles.title}>Your Tasks</Text>
       </View>
       <View style={styles.items}>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 1
-        </Text>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 2
-        </Text>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 3
-        </Text>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 4
-        </Text>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 5
-        </Text>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 6
-        </Text>
-        <Text style={styles.item}>
-          <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-          Task 7
-        </Text>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
+            <Text>Task 1</Text>
+          </Text>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -76,11 +90,15 @@ const styles = StyleSheet.create({
     overflow: "scroll",
   },
   item: {
-    padding: 40,
+    flex: 1,
+    height: 80,
+    flexDirection: "column",
     borderBottomWidth: 1,
     borderColor: "#E5E9ED",
     color: "#1B1B1D",
     fontWeight: "bold",
     fontSize: 20,
+    justifyContent: "space-evenly",
+    alignItems: "center",
   },
 });

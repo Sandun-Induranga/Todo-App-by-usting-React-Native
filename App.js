@@ -58,7 +58,7 @@ export default function App() {
           </Text>
         </View>
       </View>
-      <View>
+      <View style={styles.btnAdd}>
         <TouchableOpacity style={styles.btn}>
           <Text>My button</Text>
         </TouchableOpacity>
@@ -111,14 +111,16 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
   },
   btn: {
-    position: "absolute",
-    bottom: 10,
-    width: "90%",
-    left: "5%",
     backgroundColor: "#4A3780",
     height: 60,
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+  },
+  btnAdd: {
+    position: "absolute",
+    bottom: 20,
+    width: "90%",
+    left: "5%",
   },
 });

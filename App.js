@@ -60,7 +60,9 @@ export default function App() {
       </View>
       <View style={styles.btnAdd}>
         <TouchableOpacity style={styles.btn}>
-          <Text>My button</Text>
+          <Text style={{ fontSize: 16, color: "white", fontWeight: "bold" }}>
+            Add New Task
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

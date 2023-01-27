@@ -6,7 +6,12 @@ export default function App() {
       <View style={styles.tasks}>
         <Text style={styles.title}>Your Tasks</Text>
       </View>
-      <View style={styles.items}></View>
+      <View style={styles.items}>
+        <Text style={styles.item}>Task 1</Text>
+        <Text style={styles.item}>Task 2</Text>
+        <Text style={styles.item}>Task 3</Text>
+        <Text style={styles.item}>Task 4</Text>
+      </View>
     </SafeAreaView>
   );
 }
@@ -42,5 +47,8 @@ const styles = StyleSheet.create({
     right: "5%",
     top: 200,
     borderRadius: 20,
+  },
+  item: {
+    padding: 40,
   },
 });

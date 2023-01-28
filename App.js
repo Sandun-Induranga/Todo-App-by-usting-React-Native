@@ -17,20 +17,27 @@ export default function App() {
       <View style={styles.items}>
         <View>
           <View style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={70} color="#E7E2F3" />
-            <Text style={{ fontSize: 25, fontWeight: "500" }}>Task 1</Text>
-            <Text
-              style={{
-                color: "#767579",
-                fontWeight: "400",
-                fontSize: 18,
-              }}
-            >
-              28/01/2023
+            <Ionicons name="md-trophy" size={50} color="#E7E2F3" />
+
+            <View style={{ marginLeft: 10 }}>
+              <Text style={{ fontSize: 25, fontWeight: "500" }}>Task 1</Text>
+              <Text
+                style={{
+                  color: "#767579",
+                  fontWeight: "400",
+                  fontSize: 18,
+                }}
+              >
+                28/01/2023
+              </Text>
+            </View>
+            <Text>
+              <Ionicons name="md-trash" size={50} color="#E7E2F3" />
             </Text>
           </View>
         </View>
       </View>
+
       <View style={styles.btnAdd}>
         <TouchableOpacity style={styles.btn}>
           <Text style={{ fontSize: 16, color: "white", fontWeight: "bold" }}>
@@ -86,7 +93,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 25,
     paddingLeft: 40,
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     alignItems: "center",
   },
   btn: {

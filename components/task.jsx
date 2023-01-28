@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
-export default function Task() {
+export default function Task(props) {
   return (
     <View style={styles.item}>
       <Ionicons
@@ -23,7 +23,7 @@ export default function Task() {
       />
 
       <View style={{ marginLeft: 20, width: "70%" }}>
-        <Text style={{ fontSize: 22, fontWeight: "600" }}>JS Assignment</Text>
+        <Text style={{ fontSize: 22, fontWeight: "600" }}>{props.title}</Text>
         <Text
           style={{
             color: "#767579",

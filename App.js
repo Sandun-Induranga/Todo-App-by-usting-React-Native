@@ -16,8 +16,8 @@ export default function App() {
       </View>
       <View style={styles.items}>
         <Task title="JS Assignment" des="Before 30/01/2023"></Task>
-        <Task title="JS Assignment" des="Before 30/01/2023"></Task>
-        <Task title="JS Assignment" des="Before 30/01/2023"></Task>
+        <Task title="Cricket Match" des="SL vs NZ 02/03/2023"></Task>
+        <Task title="CNS Lecture" des="14/02/2023"></Task>
       </View>
 
       <View style={styles.btnAdd}>

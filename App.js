@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import Task from "./components/task";
+import { useFonts } from "expo-font";
 
 export default function App() {
   return (
@@ -35,8 +36,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F1F5F9",
-    padding: 5,
-    paddingTop: 25,
   },
 
   tasks: {
@@ -51,6 +50,7 @@ const styles = StyleSheet.create({
   title: {
     textAlign: "center",
     fontSize: 32,
+    fontFamily: "Poppins-Black",
     fontWeight: "bold",
     color: "white",
   },

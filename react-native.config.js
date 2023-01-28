@@ -1,3 +1,3 @@
 module.exports = {
-  assets: ["./assets/font"],
+  assets: ["./assets/font/Poppins-Black.ttf"],
 };

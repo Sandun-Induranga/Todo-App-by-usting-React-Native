@@ -1,12 +1,7 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
+
 export default function Task(props) {
   return (
     <View style={styles.item}>
@@ -23,15 +18,16 @@ export default function Task(props) {
       />
 
       <View style={{ marginLeft: 20, width: "70%" }}>
-        <Text style={{ fontSize: 22, fontWeight: "600" }}>{props.title}</Text>
+        <Text style={{ fontSize: 22, fontWeight: "400" }}>{props.title}</Text>
         <Text
           style={{
             color: "#767579",
             fontWeight: "400",
             fontSize: 16,
+            fontStyle: "italic",
           }}
         >
-          Before 30/01/2023
+          {props.des}
         </Text>
       </View>
       <Text style={{ left: -10 }}>

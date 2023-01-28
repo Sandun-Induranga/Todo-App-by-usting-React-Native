@@ -46,3 +46,21 @@ export default function App() {
     </View>
   );
 }
+
+const styles = [
+  {
+    item: {
+      display: "flex",
+      flexDirection: "row",
+      height: 80,
+      borderBottomWidth: 1,
+      borderColor: "#E5E9ED",
+      color: "#1B1B1D",
+      fontWeight: "bold",
+      fontSize: 25,
+      paddingLeft: 20,
+      justifyContent: "flex-start",
+      alignItems: "center",
+    },
+  },
+];

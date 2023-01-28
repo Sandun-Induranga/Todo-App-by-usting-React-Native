@@ -19,7 +19,7 @@ export default function App() {
           <View style={styles.item}>
             <Ionicons name="md-trophy" size={50} color="#E7E2F3" />
 
-            <View style={{ marginLeft: 10 }}>
+            <View style={{ marginLeft: 20, width: "70%" }}>
               <Text style={{ fontSize: 25, fontWeight: "500" }}>Task 1</Text>
               <Text
                 style={{
@@ -32,7 +32,7 @@ export default function App() {
               </Text>
             </View>
             <Text>
-              <Ionicons name="md-trash" size={50} color="#E7E2F3" />
+              <Ionicons name="md-trash" size={30} color="#E7E2F3" />
             </Text>
           </View>
         </View>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     color: "#1B1B1D",
     fontWeight: "bold",
     fontSize: 25,
-    paddingLeft: 40,
+    paddingLeft: 20,
     justifyContent: "flex-start",
     alignItems: "center",
   },

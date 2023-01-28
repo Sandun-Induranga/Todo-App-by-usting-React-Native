@@ -6,8 +6,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React, { useState } from "react";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { useFonts } from "expo-font";
 import Task from "./components/task";
 
 export default function App() {
@@ -18,8 +16,8 @@ export default function App() {
       </View>
       <View style={styles.items}>
         <Task></Task>
-        <Task style={styles.item}></Task>
-        <Task style={styles.item}></Task>
+        <Task></Task>
+        <Task></Task>
       </View>
 
       <View style={styles.btnAdd}>
@@ -74,19 +72,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 60,
-  },
-  item: {
-    display: "flex",
-    flexDirection: "row",
-    height: 80,
-    borderBottomWidth: 1,
-    borderColor: "#E5E9ED",
-    color: "#1B1B1D",
-    fontWeight: "bold",
-    fontSize: 25,
-    paddingLeft: 20,
-    justifyContent: "flex-start",
-    alignItems: "center",
   },
   btnAdd: {
     position: "absolute",

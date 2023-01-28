@@ -18,46 +18,10 @@ export default function App() {
         <View>
           <Text style={styles.item}>
             <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <View>
-              <Text style={{ fontSize: 18, fontWeight: "bold" }}>Task 1</Text>
-              <Text style={{ fontSize: 15, color: "#606061" }}>28/01/2023</Text>
+            <View style={styles.itemText}>
+              <Text>Task 1</Text>
+              <Text>28/01/2023</Text>
             </View>
-          </Text>
-        </View>
-        <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
-          </Text>
-        </View>
-        <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
-          </Text>
-        </View>
-        <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
-          </Text>
-        </View>
-        <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
-          </Text>
-        </View>
-        <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
-          </Text>
-        </View>
-        <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
           </Text>
         </View>
       </View>
@@ -107,13 +71,24 @@ const styles = StyleSheet.create({
   },
   item: {
     height: 80,
-    flexDirection: "column",
     borderBottomWidth: 1,
     borderColor: "#E5E9ED",
     color: "#1B1B1D",
     fontWeight: "bold",
     fontSize: 20,
     paddingLeft: 40,
+  },
+  itemText: {
+    flex: 1,
+    flexDirection: "column",
+    width: "60%",
+    height: "100%",
+    fontSize: 15,
+    color: "#606061",
+    fontWeight: "400",
+    position: "absolute",
+    left: "30%",
+    backgroundColor: "red",
   },
   btn: {
     backgroundColor: "#4A3780",

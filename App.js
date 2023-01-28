@@ -18,7 +18,10 @@ export default function App() {
         <View>
           <Text style={styles.item}>
             <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <Text>Task 1</Text>
+            <View>
+              <Text style={{ fontSize: 18, fontWeight: "bold" }}>Task 1</Text>
+              <Text style={{ fontSize: 15, color: "#606061" }}>28/01/2023</Text>
+            </View>
           </Text>
         </View>
         <View>

@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /snap/node/7073/bin/yarn.js add expo-checkbox@~2.2.2
+  /usr/local/bin/node /snap/node/7073/bin/yarn.js add expo-font@~11.0.1 @expo-google-fonts/inter
 
 PATH: 
-  /media/sandu/0559F5C021740317/GDSE/Project_Zone/Mobile/todo-app/node_modules/.bin:/media/sandu/0559F5C021740317/GDSE/Project_Zone/Mobile/todo-app/node_modules/.bin:/media/sandu/0559F5C021740317/GDSE/Project_Zone/Mobile/node_modules/.bin:/media/sandu/0559F5C021740317/GDSE/Project_Zone/node_modules/.bin:/media/sandu/0559F5C021740317/GDSE/node_modules/.bin:/media/sandu/0559F5C021740317/node_modules/.bin:/media/sandu/node_modules/.bin:/media/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:ANDROID_SDK_ROOT/root/Android/Sdk:/home/sandu/Android/Sdk/emulator:/home/sandu/Android/Sdk/platform-tools:/home/sandu/Android/Sdk/tools:/home/sandu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sandu/Android/Sdk/tools:/home/sandu/Android/Sdk/platform-tools
+  ANDROID_SDK_ROOT/root/Android/Sdk:/home/sandu/Android/Sdk/emulator:/home/sandu/Android/Sdk/platform-tools:/home/sandu/Android/Sdk/tools:/home/sandu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sandu/Android/Sdk/tools:/home/sandu/Android/Sdk/platform-tools
 
 Yarn version: 
   1.22.19

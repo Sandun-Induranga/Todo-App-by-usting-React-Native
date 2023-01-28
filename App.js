@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { useFonts } from "expo-font";
 
 export default function App() {
   return (
@@ -29,15 +30,17 @@ export default function App() {
             />
 
             <View style={{ marginLeft: 20, width: "70%" }}>
-              <Text style={{ fontSize: 25, fontWeight: "600" }}>Task 1</Text>
+              <Text style={{ fontSize: 22, fontWeight: "600" }}>
+                JS Assignment
+              </Text>
               <Text
                 style={{
                   color: "#767579",
                   fontWeight: "400",
-                  fontSize: 18,
+                  fontSize: 16,
                 }}
               >
-                28/01/2023
+                Before 30/01/2023
               </Text>
             </View>
             <Text style={{ left: -10 }}>

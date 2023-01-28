@@ -10,9 +10,12 @@ import Task from "./components/task";
 import { useFonts } from "expo-font";
 
 export default function App() {
+  const date = new Date().toUTCString().slice(0, 10);
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.tasks}>
+        <Text>{date}</Text>
         <Text style={styles.title}>My Todo List</Text>
       </View>
       <View style={styles.items}>

@@ -17,10 +17,19 @@ export default function App() {
       <View style={styles.items}>
         <View>
           <View style={styles.item}>
-            <Ionicons name="md-trophy" size={50} color="#E7E2F3" />
+            <Ionicons
+              style={{
+                backgroundColor: "#E7E2F3",
+                borderRadius: 50,
+                padding: 10,
+              }}
+              name="md-trophy"
+              size={30}
+              color="#4A3780"
+            />
 
             <View style={{ marginLeft: 20, width: "70%" }}>
-              <Text style={{ fontSize: 25, fontWeight: "500" }}>Task 1</Text>
+              <Text style={{ fontSize: 25, fontWeight: "600" }}>Task 1</Text>
               <Text
                 style={{
                   color: "#767579",
@@ -31,8 +40,13 @@ export default function App() {
                 28/01/2023
               </Text>
             </View>
-            <Text>
-              <Ionicons name="md-trash" size={30} color="#E7E2F3" />
+            <Text style={{ left: -10 }}>
+              <Ionicons
+                style={{ backgroundColor: "#FEF5D3" }}
+                name="md-trash"
+                size={25}
+                color="#403100"
+              />
             </Text>
           </View>
         </View>

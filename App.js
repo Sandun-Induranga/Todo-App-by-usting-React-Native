@@ -15,9 +15,9 @@ export default function App() {
         <Text style={styles.title}>My Todo List</Text>
       </View>
       <View style={styles.items}>
-        <Task></Task>
-        <Task></Task>
-        <Task></Task>
+        <Task title="JS Assignment" des="Before 30/01/2023"></Task>
+        <Task title="JS Assignment" des="Before 30/01/2023"></Task>
+        <Task title="JS Assignment" des="Before 30/01/2023"></Task>
       </View>
 
       <View style={styles.btnAdd}>

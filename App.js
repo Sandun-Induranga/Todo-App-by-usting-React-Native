@@ -16,13 +16,19 @@ export default function App() {
       </View>
       <View style={styles.items}>
         <View>
-          <Text style={styles.item}>
-            <Ionicons name="md-checkmark-circle" size={50} color="#E7E2F3" />
-            <View style={styles.itemText}>
-              <Text>Task 1</Text>
-              <Text>28/01/2023</Text>
-            </View>
-          </Text>
+          <View style={styles.item}>
+            <Ionicons name="md-checkmark-circle" size={70} color="#E7E2F3" />
+            <Text style={{ fontSize: 25, fontWeight: "500" }}>Task 1</Text>
+            <Text
+              style={{
+                color: "#767579",
+                fontWeight: "400",
+                fontSize: 18,
+              }}
+            >
+              28/01/2023
+            </Text>
+          </View>
         </View>
       </View>
       <View style={styles.btnAdd}>
@@ -68,27 +74,20 @@ const styles = StyleSheet.create({
     top: 200,
     borderRadius: 20,
     overflow: "scroll",
+    paddingTop: 10,
   },
   item: {
+    display: "flex",
+    flexDirection: "row",
     height: 80,
     borderBottomWidth: 1,
     borderColor: "#E5E9ED",
     color: "#1B1B1D",
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 25,
     paddingLeft: 40,
-  },
-  itemText: {
-    flex: 1,
-    flexDirection: "column",
-    width: "60%",
-    height: "100%",
-    fontSize: 15,
-    color: "#606061",
-    fontWeight: "400",
-    position: "absolute",
-    left: "30%",
-    backgroundColor: "red",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   btn: {
     backgroundColor: "#4A3780",

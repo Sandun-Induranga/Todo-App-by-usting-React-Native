@@ -4,6 +4,7 @@ import {
   View,
   SafeAreaView,
   TouchableOpacity,
+  DialogInput,
 } from "react-native";
 import React, { useState } from "react";
 import Task from "./components/task";
@@ -15,7 +16,9 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.tasks}>
-        <Text>{date}</Text>
+        <Text style={{ color: "white", fontSize: 20, marginBottom: 20 }}>
+          {date}
+        </Text>
         <Text style={styles.title}>My Todo List</Text>
       </View>
       <View style={styles.items}>
@@ -25,7 +28,7 @@ export default function App() {
       </View>
 
       <View style={styles.btnAdd}>
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity style={styles.btn} onPress={alert("Done")}>
           <Text style={{ fontSize: 16, color: "white", fontWeight: "bold" }}>
             Add New Task
           </Text>
@@ -34,6 +37,19 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
+// function addItem() {
+//   <DialogInput
+//     isDialogVisible={true}
+//     title={"DialogInput 1"}
+//     message={"Message for DialogInput #1"}
+//     hintInput={"HINT INPUT"}
+//     submitInput={(inputText) => {}}
+//     closeDialog={() => {
+//       this.showDialog(false);
+//     }}
+//   ></DialogInput>;
+// }
 
 const styles = StyleSheet.create({
   container: {
